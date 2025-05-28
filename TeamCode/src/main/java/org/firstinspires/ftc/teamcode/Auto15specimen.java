@@ -25,7 +25,7 @@ public class Auto15specimen extends LinearOpMode{
         if (isStopRequested()) return;
         Actions.runBlocking(
                 drive.actionBuilder(beginPose)
-                        .lineToY(36)
+                        .lineToY(24)
                         .waitSeconds(2)
                         .setReversed(true)
                         .splineToLinearHeading(
@@ -47,7 +47,7 @@ public class Auto15specimen extends LinearOpMode{
                         )
                         .setReversed(true)
                         .splineToLinearHeading(
-                                new Pose2d(-47, 60, Math.toRadians(270)), // Target pose
+                                new Pose2d(-47, 60, Math.toRadians(265)), // Target pose
                                 Math.toRadians(270)                      // Tangent angle
                         )
                         .setReversed(true)
