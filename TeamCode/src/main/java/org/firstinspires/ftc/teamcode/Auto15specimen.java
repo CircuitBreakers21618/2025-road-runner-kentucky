@@ -25,40 +25,40 @@ public class Auto15specimen extends LinearOpMode{
         if (isStopRequested()) return;
         Actions.runBlocking(
                 drive.actionBuilder(beginPose)
-                        .lineToY(24)
-                        .waitSeconds(2)
+                        .lineToY(45)
+                        .waitSeconds(1)
                         .setReversed(true)
                         .splineToLinearHeading(
-                                new Pose2d(-20, 43, Math.toRadians(45)), // Target pose
+                                new Pose2d(-40, 45, Math.toRadians(315)), // Target pose
                                 Math.toRadians(0)                      // Tangent angle
                         )
                         .turn(-Math.toRadians(90))
                         .setReversed(true)
                         .splineToLinearHeading(
-                                new Pose2d(-32, 43, Math.toRadians(45)), // Target pose
+                                new Pose2d(-53, 45, Math.toRadians(0)), // Target pose
                                 Math.toRadians(270)                      // Tangent angle
                         )
                         .waitSeconds(0.1)
                         .turn(-Math.toRadians(90))
                         .setReversed(true)
                         .splineToLinearHeading(
-                                new Pose2d(-40, 43, Math.toRadians(45)), // Target pose
+                                new Pose2d(-60, 45, Math.toRadians(0)), // Target pose
                                 Math.toRadians(270)                      // Tangent angle
                         )
                         .setReversed(true)
                         .splineToLinearHeading(
-                                new Pose2d(-47, 60, Math.toRadians(265)), // Target pose
+                                new Pose2d(-62, 65, Math.toRadians(0)), // Target pose
                                 Math.toRadians(270)                      // Tangent angle
                         )
                         .setReversed(true)
-                        .lineToY(74)
-                        .strafeTo(new Vector2d(-.08, 36))//2
+                        .lineToX(5)
+                        .strafeTo(new Vector2d(0, 12))//2
                         .strafeTo(new Vector2d(-47, 63))
-                        .strafeTo(new Vector2d(-1.3, 36))//3
+                        .strafeTo(new Vector2d(0.8, 12))//3
                         .strafeTo(new Vector2d(-47, 63))
-                        .strafeTo(new Vector2d(-1.5, 36))//4
+                        .strafeTo(new Vector2d(1.5, 12))//4
                         .strafeTo(new Vector2d(-47, 63))
-                        .strafeTo(new Vector2d(-1.8, 36))//5
+                        .strafeTo(new Vector2d(1.8, 12))//5
 
                         .build());
 
