@@ -29,26 +29,27 @@ public class Auto15specimen extends LinearOpMode{
                         .waitSeconds(1)
                         .setReversed(true)
                         .splineToLinearHeading(
-                                new Pose2d(-40, 45, Math.toRadians(315)), // Target pose
-                                Math.toRadians(0)                      // Tangent angle
+                                new Pose2d(-45, 45, Math.toRadians(-45)), // Target pose
+                                Math.toRadians(45)                      // Tangent angle
                         )
+
                         .turn(-Math.toRadians(90))
                         .setReversed(true)
                         .splineToLinearHeading(
-                                new Pose2d(-53, 45, Math.toRadians(0)), // Target pose
-                                Math.toRadians(270)                      // Tangent angle
+                                new Pose2d(-53, 45, Math.toRadians(-45)), // Target pose
+                                Math.toRadians(45)                      // Tangent angle
                         )
                         .waitSeconds(0.1)
                         .turn(-Math.toRadians(90))
                         .setReversed(true)
                         .splineToLinearHeading(
-                                new Pose2d(-60, 45, Math.toRadians(0)), // Target pose
-                                Math.toRadians(270)                      // Tangent angle
+                                new Pose2d(-60, 45, Math.toRadians(-45)), // Target pose
+                                Math.toRadians(45)                      // Tangent angle
                         )
                         .setReversed(true)
                         .splineToLinearHeading(
-                                new Pose2d(-62, 65, Math.toRadians(0)), // Target pose
-                                Math.toRadians(270)                      // Tangent angle
+                                new Pose2d(-62, 65, Math.toRadians(-45)), // Target pose
+                                Math.toRadians(180)                      // Tangent angle
                         )
                         .setReversed(true)
                         .lineToX(5)

@@ -5,17 +5,17 @@ import com.qualcomm.robotcore.hardware.HardwareMap;
 
 public class chaseintialization {
 
-    public DcMotor topleft;
-    public DcMotor topright;
-    public DcMotor backleft;
-    public DcMotor backright;
+    public DcMotor leftFront;
+    public DcMotor rightFront;
+    public DcMotor leftBack;
+    public DcMotor rightBack;
 
     public void init(HardwareMap hwMap){
 
-        topleft = hwMap.get(DcMotor.class, "topleft");
-        topright = hwMap.get(DcMotor.class, "topright");
-        backleft = hwMap.get(DcMotor.class, "backleft");
-        backright = hwMap.get(DcMotor.class, "backright");
+        leftFront = hwMap.get(DcMotor.class, "leftFront");
+        rightFront = hwMap.get(DcMotor.class, "rightFront");
+        leftBack = hwMap.get(DcMotor.class, "leftBack");
+        rightBack = hwMap.get(DcMotor.class, "rightBack");
     }
 }
 

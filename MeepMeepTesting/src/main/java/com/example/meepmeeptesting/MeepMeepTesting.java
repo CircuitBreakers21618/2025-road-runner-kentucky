@@ -17,22 +17,21 @@ public class MeepMeepTesting {
                 .followTrajectorySequence(drive -> drive.trajectorySequenceBuilder(new Pose2d(0, 71, -Math.PI / 2))
                         .forward(35)
                         .waitSeconds(2)
-                        .setReversed(true)
-                        .splineToLinearHeading(
-                                new Pose2d(-20, 43, Math.toRadians(45)), // Target pose
+                        .setReversed(true).splineToLinearHeading(
+                                new Pose2d(-36, 43, Math.toRadians(45)), // Target pose
                                 Math.toRadians(0)                      // Tangent angle
                         )
                         .turn(-Math.toRadians(90))
                         .setReversed(true)
                         .splineToLinearHeading(
-                                new Pose2d(-32, 43, Math.toRadians(45)), // Target pose
+                                new Pose2d(-42, 43, Math.toRadians(45)), // Target pose
                                 Math.toRadians(270)                      // Tangent angle
                         )
                         .waitSeconds(0.1)
                         .turn(-Math.toRadians(90))
                         .setReversed(true)
                         .splineToLinearHeading(
-                                new Pose2d(-40, 43, Math.toRadians(45)), // Target pose
+                                new Pose2d(-48, 43, Math.toRadians(45)), // Target pose
                                 Math.toRadians(270)                      // Tangent angle
                         )
                         .setReversed(true)
