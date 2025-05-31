@@ -51,7 +51,7 @@ public class MeepMeepTesting {
                        .build());
         myBot.setDimensions(16, 16.5);
         meepMeep.setBackground(MeepMeep.Background.FIELD_INTOTHEDEEP_JUICE_DARK)
-                .setDarkMode(true)
+                .setDarkMode(false)
                 .setBackgroundAlpha(0.95f)
                 .addEntity(myBot)
                 .start();

@@ -15,7 +15,7 @@ public class Auto15specimen extends LinearOpMode{
     public void runOpMode(){
 
 
-        Pose2d beginPose = new Pose2d(0, 71, -Math.PI / 2);
+        Pose2d beginPose = new Pose2d(-71, 0, 0);
 
         //calling hardwareMap
         MecanumDrive drive = new MecanumDrive(hardwareMap, beginPose);
@@ -25,26 +25,26 @@ public class Auto15specimen extends LinearOpMode{
         if (isStopRequested()) return;
         Actions.runBlocking(
                 drive.actionBuilder(beginPose)
-                        .lineToY(45)
+                        .lineToX(-34)
                         .waitSeconds(1)
                         .setReversed(true)
                         .splineToLinearHeading(
-                                new Pose2d(-45, 45, Math.toRadians(-45)), // Target pose
-                                Math.toRadians(45)                      // Tangent angle
+                                new Pose2d(-47, -16, Math.toRadians(270)), // Target pose
+                                Math.toRadians(135)                      // Tangent angle
                         )
 
                         .turn(-Math.toRadians(90))
                         .setReversed(true)
                         .splineToLinearHeading(
-                                new Pose2d(-53, 45, Math.toRadians(-45)), // Target pose
-                                Math.toRadians(45)                      // Tangent angle
+                                new Pose2d(-53, -16, Math.toRadians(-45)), // Target pose
+                                Math.toRadians(135)                      // Tangent angle
                         )
                         .waitSeconds(0.1)
                         .turn(-Math.toRadians(90))
                         .setReversed(true)
                         .splineToLinearHeading(
-                                new Pose2d(-60, 45, Math.toRadians(-45)), // Target pose
-                                Math.toRadians(45)                      // Tangent angle
+                                new Pose2d(-57, -16, Math.toRadians(-45)), // Target pose
+                                Math.toRadians(135)                      // Tangent angle
                         )
                         .setReversed(true)
                         .splineToLinearHeading(
