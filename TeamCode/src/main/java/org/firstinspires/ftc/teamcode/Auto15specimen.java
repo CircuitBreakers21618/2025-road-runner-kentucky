@@ -25,30 +25,30 @@ public class Auto15specimen extends LinearOpMode{
         if (isStopRequested()) return;
         Actions.runBlocking(
                 drive.actionBuilder(beginPose)
-                        .lineToX(-34)
+                        .lineToX(-40)
                         .waitSeconds(1)
                         .setReversed(true)
                         .splineToLinearHeading(
-                                new Pose2d(-47, -16, Math.toRadians(270)), // Target pose
+                                new Pose2d(-57, -16, Math.toRadians(140)), // Target pose
                                 Math.toRadians(135)                      // Tangent angle
                         )
 
-                        .turn(-Math.toRadians(90))
+                        .turn(-Math.toRadians(60))
                         .setReversed(true)
                         .splineToLinearHeading(
-                                new Pose2d(-53, -16, Math.toRadians(-45)), // Target pose
+                                new Pose2d(-57, -28, Math.toRadians(140)), // Target pose
                                 Math.toRadians(135)                      // Tangent angle
                         )
                         .waitSeconds(0.1)
-                        .turn(-Math.toRadians(90))
+                        .turn(-Math.toRadians(60))
                         .setReversed(true)
                         .splineToLinearHeading(
-                                new Pose2d(-57, -16, Math.toRadians(-45)), // Target pose
+                                new Pose2d(-57, -34, Math.toRadians(140)), // Target pose
                                 Math.toRadians(135)                      // Tangent angle
                         )
                         .setReversed(true)
                         .splineToLinearHeading(
-                                new Pose2d(-62, 65, Math.toRadians(-45)), // Target pose
+                                new Pose2d(-62, 65, Math.toRadians(0)), // Target pose
                                 Math.toRadians(180)                      // Tangent angle
                         )
                         .setReversed(true)
