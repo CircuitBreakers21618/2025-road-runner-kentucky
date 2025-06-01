@@ -29,8 +29,8 @@ public class Auto15specimen extends LinearOpMode{
                         .waitSeconds(1)
                         .setReversed(true)
                         .splineToLinearHeading(
-                                new Pose2d(-33, -30, Math.toRadians(-135)), // Target pose
-                                Math.toRadians(-135)                      // Tangent angle
+                                new Pose2d(-47, -21, Math.toRadians(155)), // Target pose
+                                Math.toRadians(135)                      // Tangent angle
                         )
 
                         .turn(-Math.toRadians(60))
@@ -43,7 +43,7 @@ public class Auto15specimen extends LinearOpMode{
                         .turn(-Math.toRadians(60))
                         .setReversed(true)
                         .splineToLinearHeading(
-                                new Pose2d(-60, -34, Math.toRadians(170)), // Target pose
+                                new Pose2d(-60, -34, Math.toRadians(155)), // Target pose
                                 Math.toRadians(135)                      // Tangent angle
                         )
                         .waitSeconds(0.3)
