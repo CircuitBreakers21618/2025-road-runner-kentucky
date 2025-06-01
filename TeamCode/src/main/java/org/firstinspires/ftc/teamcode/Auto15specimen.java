@@ -29,7 +29,7 @@ public class Auto15specimen extends LinearOpMode{
                         .waitSeconds(1)
                         .setReversed(true)
                         .splineToLinearHeading(
-                                new Pose2d(-47, -21, Math.toRadians(155)), // Target pose
+                                new Pose2d(-47, -33, Math.toRadians(155)), // Target pose
                                 Math.toRadians(135)                      // Tangent angle
                         )
 
@@ -43,24 +43,24 @@ public class Auto15specimen extends LinearOpMode{
                         .turn(-Math.toRadians(60))
                         .setReversed(true)
                         .splineToLinearHeading(
-                                new Pose2d(-60, -34, Math.toRadians(155)), // Target pose
+                                new Pose2d(-60, -33, Math.toRadians(155)), // Target pose
                                 Math.toRadians(135)                      // Tangent angle
                         )
                         .waitSeconds(0.3)
                         .setReversed(true)
                         .splineToLinearHeading(
-                                new Pose2d(-62, -55, Math.toRadians(0)), // Target pose
+                                new Pose2d(-71, -45, Math.toRadians(0)), // Target pose
                                 Math.toRadians(180)                      // Tangent angle
                         )
                         .setReversed(true)
                         .lineToX(-68)
-                        .strafeTo(new Vector2d(0, 12))//2
-                        .strafeTo(new Vector2d(-47, 63))
-                        .strafeTo(new Vector2d(0.8, 12))//3
-                        .strafeTo(new Vector2d(-47, 63))
-                        .strafeTo(new Vector2d(1.5, 12))//4
-                        .strafeTo(new Vector2d(-47, 63))
-                        .strafeTo(new Vector2d(1.8, 12))//5
+                        .strafeTo(new Vector2d(-20, 0))//2
+                        .strafeTo(new Vector2d(-71, -45))
+                        .strafeTo(new Vector2d(-20, -.8))//3
+                        .strafeTo(new Vector2d(-71, -45))
+                        .strafeTo(new Vector2d(-20, -1))//4
+                        .strafeTo(new Vector2d(-71, -45))
+                        .strafeTo(new Vector2d(-20, -1.8))//5
 
                         .build());
 
