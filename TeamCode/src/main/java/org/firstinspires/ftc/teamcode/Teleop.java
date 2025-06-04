@@ -25,7 +25,7 @@ public class Teleop extends OpMode {
 
         //seting powers
         driveteleop.leftFront.setPower(gamepad1.right_stick_y + -gamepad1.left_stick_x * 1.1 + -gamepad1.right_stick_x);
-        driveteleop.leftBack.setPower(-gamepad1.right_stick_y + -gamepad1.left_stick_x * 1.1+ gamepad1.right_stick_x);
+        driveteleop.leftBack.setPower(-gamepad1.right_stick_y + -gamepad1.left_stick_x * 1.3+ gamepad1.right_stick_x);
         driveteleop.rightFront.setPower(gamepad1.right_stick_y + gamepad1.left_stick_x * 1.2 +gamepad1.right_stick_x);
         driveteleop.rightBack.setPower(-gamepad1.right_stick_y + -gamepad1.left_stick_x * 1.1 + -gamepad1.right_stick_x);
         LineraMecanizmeteleop.leftliner.setPower(-gamepad2.right_stick_y);
