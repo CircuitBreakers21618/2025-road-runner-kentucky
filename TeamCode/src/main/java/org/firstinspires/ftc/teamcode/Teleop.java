@@ -32,34 +32,35 @@ public class Teleop extends OpMode {
         LineraMecanizmeteleop.rightliner.setPower(gamepad2.right_stick_y);
         LineraMecanizmeteleop.forwardliner.setPower(gamepad2.left_stick_y);
 
-//
-//        if (gamepad2.y){
-//            LineraMecanizmeteleop.toparm1.setPosition(1);
-//
-//        }
-//
-//        if (gamepad2.y){
-//            LineraMecanizmeteleop.toparm2.setPosition(-1);
-//
-//        }
-//        if (gamepad2.a){
-//            LineraMecanizmeteleop.toparm1.setPosition(1);
-//
-//        }
-//
-//        if (gamepad2.a){
-//            LineraMecanizmeteleop.toparm2.setPosition(-1);
-//
-//        }
-//        if (gamepad2.b){
-//            LineraMecanizmeteleop.topclaw.setPosition(1);
-//
-//        }
-//
-//        if (gamepad2.x){
-//            LineraMecanizmeteleop.topclaw.setPosition(0);
-//
-//        }
+
+        if (gamepad2.y){
+            LineraMecanizmeteleop.toparm1.setPosition(.7);
+
+        }
+
+        if (gamepad2.y){
+            LineraMecanizmeteleop.toparm2.setPosition(0);
+
+        }
+        if (gamepad2.a){
+            LineraMecanizmeteleop.toparm1.setPosition(0);
+
+        }
+
+
+        if (gamepad2.a){
+            LineraMecanizmeteleop.toparm2.setPosition(1);
+
+        }
+        if (gamepad2.b){
+            LineraMecanizmeteleop.topclaw.setPosition(.6);
+
+        }
+
+        if (gamepad2.x){
+            LineraMecanizmeteleop.topclaw.setPosition(.1);
+
+        }
 
 
 
