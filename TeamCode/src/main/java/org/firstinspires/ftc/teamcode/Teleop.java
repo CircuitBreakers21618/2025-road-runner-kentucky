@@ -35,18 +35,50 @@ public class Teleop extends OpMode {
         LineraMecanizmeteleop.rightliner.setPower(gamepad2.right_stick_y);
         LineraMecanizmeteleop.forwardliner.setPower(gamepad2.left_stick_y);
 
-        if (gamepad2.y) {
-            LineraMecanizmeteleop.topclaw.setPosition(0.6);
-            LineraMecanizmeteleop.toparm2.setPosition(1);
-            LineraMecanizmeteleop.toparm1.setPosition(0);
+        if (gamepad2.y) {//fast transition
+            LineraMecanizmeteleop.topclaw.setPosition(0.6);//open top claw
+            LineraMecanizmeteleop.toparm2.setPosition(1);//move to transfer position
+            LineraMecanizmeteleop.toparm1.setPosition(0);//move to transfer position
+            LineraMecanizmeteleop.bottomarm1.setPosition(0);
+            LineraMecanizmeteleop.bottomarm2.setPosition(.75);
+            LineraMecanizmeteleop.bottomrotator.setPosition(1);
+            LineraMecanizmeteleop.bottomclaw.setPosition(.3);
 
-            sleep(1000);  // Works here!
+            sleep(1000);
 
-            LineraMecanizmeteleop.topclaw.setPosition(0.15);
+            LineraMecanizmeteleop.topclaw.setPosition(0.15);//closes claw
             sleep(400);
-            LineraMecanizmeteleop.toparm1.setPosition(0.7);
-            LineraMecanizmeteleop.toparm2.setPosition(0);
+            LineraMecanizmeteleop.bottomclaw.setPosition(.8);
+            sleep(200);
+            LineraMecanizmeteleop.toparm1.setPosition(0.7);//moves to hang position
+            LineraMecanizmeteleop.toparm2.setPosition(0);//moves to hang position
+            LineraMecanizmeteleop.bottomarm2.setPosition(.4825);
+            LineraMecanizmeteleop.bottomarm1.setPosition(.4625);
+            LineraMecanizmeteleop.bottomrotator.setPosition(1);
         }
 
+
+        if (gamepad2.x) {//grab sample/specimen
+            LineraMecanizmeteleop.bottomclaw.setPosition(.8);
+            LineraMecanizmeteleop.bottomarm1.setPosition(.95);
+            LineraMecanizmeteleop.bottomarm2.setPosition(0);
+            LineraMecanizmeteleop.bottomrotator.setPosition(1);
+        }
+
+        if (gamepad2.b) {//pree pare to grap sample/specimen
+            LineraMecanizmeteleop.toparm2.setPosition(1);//move to transfer position
+            LineraMecanizmeteleop.toparm1.setPosition(0);//move to transfer position
+            LineraMecanizmeteleop.bottomarm2.setPosition(.4825);
+            LineraMecanizmeteleop.bottomarm1.setPosition(.4625);
+            LineraMecanizmeteleop.bottomrotator.setPosition(1);
+            LineraMecanizmeteleop.bottomclaw.setPosition(.3);
+        }
+
+
+        if (gamepad2.a) {//hanges specimen
+            LineraMecanizmeteleop.topclaw.setPosition(0.6);//open top claw
+            LineraMecanizmeteleop.toparm2.setPosition(1);//move to transfer position
+            LineraMecanizmeteleop.toparm1.setPosition(0);
+        }
 
     }}
