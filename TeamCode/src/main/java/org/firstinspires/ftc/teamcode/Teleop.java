@@ -63,8 +63,8 @@ public class Teleop extends OpMode {
             LineraMecanizmeteleop.topclaw.setPosition(0.6);//open top claw
             LineraMecanizmeteleop.toparm2.setPosition(1);//move to transfer position
             LineraMecanizmeteleop.toparm1.setPosition(0);//move to transfer position
-            LineraMecanizmeteleop.bottomarm1.setPosition(0);
-            LineraMecanizmeteleop.bottomarm2.setPosition(.75);
+            LineraMecanizmeteleop.bottomarm1.setPosition(0.05);
+            LineraMecanizmeteleop.bottomarm2.setPosition(.95);
             LineraMecanizmeteleop.bottomrotator.setPosition(1);
             LineraMecanizmeteleop.bottomclaw.setPosition(.3);
 
@@ -76,36 +76,35 @@ public class Teleop extends OpMode {
             sleep(200);
             LineraMecanizmeteleop.toparm1.setPosition(0.7);//moves to hang position
             LineraMecanizmeteleop.toparm2.setPosition(0);//moves to hang position
-            LineraMecanizmeteleop.bottomarm2.setPosition(.4825);
-            LineraMecanizmeteleop.bottomarm1.setPosition(.4625);
+            LineraMecanizmeteleop.bottomarm2.setPosition(.4);
+            LineraMecanizmeteleop.bottomarm1.setPosition(.4);
             LineraMecanizmeteleop.bottomrotator.setPosition(1);
         }
 
+        if (gamepad2.right_stick_button){
+            LineraMecanizmeteleop.toparm1.setPosition(0.7);
+        }
+        if (gamepad2.left_stick_button){
+            LineraMecanizmeteleop.toparm2.setPosition(0.1);
+        }
 
-        if (gamepad2.x) {//fast transition
+        if (gamepad2.y) {
             LineraMecanizmeteleop.topclaw.setPosition(0.6);
         }
 
-        if (gamepad2.b) {//fast transition
-            LineraMecanizmeteleop.bottomarm1.setPosition(0.6);
-            LineraMecanizmeteleop.bottomarm2.setPosition(0.6);
-        }
+
 
 
 
 
         if (currentGamepad2.b && !previousGamepad2.b) {
-            Armmove++;
-            if (Armmove < 2){
-                Armmove = 0;
-            }
             if (Armmove == 0) { //position 0 -> 1
 
                 //wrist adjust
-                arm1TargetPosition = 0.45;
+                arm1TargetPosition = .13;
                 LineraMecanizmeteleop.bottomarm2.setPosition(arm1TargetPosition);
 
-                arm2TargetPosition = 0.45;
+                arm2TargetPosition = .87;
                 LineraMecanizmeteleop.bottomarm1.setPosition(arm2TargetPosition);
 
                 arm1CurrentPosition = arm1TargetPosition;
@@ -122,7 +121,7 @@ public class Teleop extends OpMode {
                 arm1TargetPosition = 0.45;
                 LineraMecanizmeteleop.bottomarm2.setPosition(arm1TargetPosition);
 
-                arm2TargetPosition = 0.45;
+                arm2TargetPosition = 0.35;
                 LineraMecanizmeteleop.bottomarm1.setPosition(arm2TargetPosition);
 
                 arm1CurrentPosition = arm1TargetPosition;
@@ -137,14 +136,10 @@ public class Teleop extends OpMode {
 
 
         if (currentGamepad2.a && !previousGamepad2.a) {
-            Armclose_open++;
-            if (Armclose_open < 2){
-                Armclose_open = 0;
-            }
             if (Armclose_open == 0) { //position 0 -> 1
 
                 //wrist adjust
-                clawTargetPosition = 0.45;
+                clawTargetPosition = 0.6;
                 LineraMecanizmeteleop.bottomclaw.setPosition(clawTargetPosition);
 
                 clawCurrentPosition = clawTargetPosition;
@@ -155,7 +150,7 @@ public class Teleop extends OpMode {
             } else if (Armclose_open == 1) { //position 1 -> 0
 
                 //wrist adjust
-                clawTargetPosition = 0.4;
+                clawTargetPosition = 0.2;
                 LineraMecanizmeteleop.bottomclaw.setPosition(clawTargetPosition);
 
                 clawCurrentPosition = clawTargetPosition;
