@@ -75,18 +75,12 @@ public class Teleop extends OpMode {
             LineraMecanizmeteleop.bottomclaw.setPosition(.8);
             sleep(200);
             LineraMecanizmeteleop.toparm1.setPosition(0.7);//moves to hang position
-            LineraMecanizmeteleop.toparm2.setPosition(.1);//moves to hang position
+            LineraMecanizmeteleop.toparm2.setPosition(.05);//moves to hang position
             LineraMecanizmeteleop.bottomarm2.setPosition(.4);
             LineraMecanizmeteleop.bottomarm1.setPosition(.4);
             LineraMecanizmeteleop.bottomrotator.setPosition(1);
         }
 
-        if (gamepad2.right_stick_button){
-            LineraMecanizmeteleop.toparm1.setPosition(0.7);
-        }
-        if (gamepad2.left_stick_button){
-            LineraMecanizmeteleop.toparm2.setPosition(0.06);
-        }
 
         if (gamepad2.y) {
             LineraMecanizmeteleop.topclaw.setPosition(0.6);
@@ -160,11 +154,4 @@ public class Teleop extends OpMode {
 
             }
         }
-
-        if (gamepad2.a) {//hanges specimen
-            LineraMecanizmeteleop.topclaw.setPosition(0.6);//open top claw
-            LineraMecanizmeteleop.toparm2.setPosition(1);//move to transfer position
-            LineraMecanizmeteleop.toparm1.setPosition(0);
-        }
-
     }}
