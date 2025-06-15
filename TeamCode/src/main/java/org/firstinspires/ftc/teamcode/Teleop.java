@@ -61,10 +61,11 @@ public class Teleop extends OpMode {
 
         if (gamepad2.x) {//fast transition
             LineraMecanizmeteleop.topclaw.setPosition(0.6);//open top claw
-            LineraMecanizmeteleop.toparm2.setPosition(1);//move to transfer position
-            LineraMecanizmeteleop.toparm1.setPosition(0);//move to transfer position
-            LineraMecanizmeteleop.bottomarm1.setPosition(0.05);
-            LineraMecanizmeteleop.bottomarm2.setPosition(.95);
+            LineraMecanizmeteleop.toparm2.setPosition(.97);//move to transfer position
+            LineraMecanizmeteleop.toparm1.setPosition(.03);//move to transfer position
+            sleep(550);
+            LineraMecanizmeteleop.bottomarm1.setPosition(0.12);
+            LineraMecanizmeteleop.bottomarm2.setPosition(.88);
             LineraMecanizmeteleop.bottomrotator.setPosition(1);
             LineraMecanizmeteleop.bottomclaw.setPosition(.3);
 
@@ -73,6 +74,7 @@ public class Teleop extends OpMode {
             LineraMecanizmeteleop.topclaw.setPosition(0.15);//closes claw
             sleep(400);
             LineraMecanizmeteleop.bottomclaw.setPosition(.8);
+
             sleep(200);
             LineraMecanizmeteleop.toparm1.setPosition(0.7);//moves to hang position
             LineraMecanizmeteleop.toparm2.setPosition(.05);//moves to hang position
@@ -92,7 +94,7 @@ public class Teleop extends OpMode {
 
 
         if (currentGamepad2.b && !previousGamepad2.b) {
-            if (Armmove == 0) { //position 0 -> 1
+            if (Armmove == 1) { //position 0 -> 1
 
                 //wrist adjust
                 arm1TargetPosition = .13;
@@ -105,9 +107,9 @@ public class Teleop extends OpMode {
                 arm2CurrentPosition = arm2TargetPosition;
 
                 //ArmHighPosition to 1
-                Armmove = 1;
+                Armmove = 0;
 
-            } else if (Armmove == 1) { //position 1 -> 0
+            } else if (Armmove == 0) { //position 1 -> 0
 
                 //wrist adjust
 
@@ -121,7 +123,7 @@ public class Teleop extends OpMode {
                 arm1CurrentPosition = arm1TargetPosition;
                 arm2CurrentPosition = arm2TargetPosition;
                 //ArmHighPosition to 2
-                Armmove = 0;
+                Armmove = 1;
 
             }
         }

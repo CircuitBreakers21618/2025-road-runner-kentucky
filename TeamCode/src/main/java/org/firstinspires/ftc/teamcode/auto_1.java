@@ -28,13 +28,12 @@ public class auto_1 extends LinearOpMode {
         if (isStopRequested()) return;
         Actions.runBlocking(
                 drive.actionBuilder(beginPose)
-
-                        .lineToX(-40)
-                        .afterTime(2,LineraMecanizmeteleop.hang_specimen())
+                        .afterTime(.1,LineraMecanizmeteleop.hang_specimen())
+                        .lineToX(-50)
                         .waitSeconds(2)
                         .setReversed(true)
                         .splineToLinearHeading(
-                                new Pose2d(-71, -71, Math.toRadians(0)), // Target pose
+                                new Pose2d(-65, -71, Math.toRadians(0)), // Target pose
                                 Math.toRadians(135)                      // Tangent angle
                         )
                         .build());

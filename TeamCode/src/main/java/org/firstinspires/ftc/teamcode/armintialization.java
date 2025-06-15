@@ -63,11 +63,13 @@ public class armintialization {
 
         public boolean run(@NonNull TelemetryPacket packet) {
             topclaw.setPosition(0.15);
+            sleep(500);
             toparm1.setPosition(0.7);//moves to hang position
-            toparm2.setPosition(0);//moves to hang position
-            rightliner.setPower(-.6);
-            leftliner.setPower(.6);
-            sleep(400);
+            toparm2.setPosition(.05);//moves to hang position
+            sleep(1000);
+            rightliner.setPower(-.5);
+            leftliner.setPower(.5);
+            sleep(300);
             rightliner.setPower(0);
             leftliner.setPower(0);
             topclaw.setPosition(0.6);
