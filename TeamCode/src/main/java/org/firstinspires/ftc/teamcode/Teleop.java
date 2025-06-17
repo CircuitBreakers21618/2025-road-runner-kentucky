@@ -64,8 +64,8 @@ public class Teleop extends OpMode {
             LineraMecanizmeteleop.toparm2.setPosition(.97);//move to transfer position
             LineraMecanizmeteleop.toparm1.setPosition(.03);//move to transfer position
             sleep(550);
-            LineraMecanizmeteleop.bottomarm1.setPosition(0.12);
-            LineraMecanizmeteleop.bottomarm2.setPosition(.88);
+            LineraMecanizmeteleop.bottomarm1.setPosition(0.2);
+            LineraMecanizmeteleop.bottomarm2.setPosition(.8);
             LineraMecanizmeteleop.bottomrotator.setPosition(1);
             LineraMecanizmeteleop.bottomclaw.setPosition(.3);
 
