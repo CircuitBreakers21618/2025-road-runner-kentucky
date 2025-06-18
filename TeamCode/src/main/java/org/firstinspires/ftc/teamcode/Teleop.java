@@ -66,7 +66,7 @@ public class Teleop extends OpMode {
             sleep(550);
             LineraMecanizmeteleop.bottomarm1.setPosition(0.2);
             LineraMecanizmeteleop.bottomarm2.setPosition(.8);
-            LineraMecanizmeteleop.bottomrotator.setPosition(1);
+            LineraMecanizmeteleop.bottomrotator.setPosition(.95);
             LineraMecanizmeteleop.bottomclaw.setPosition(.3);
 
             sleep(1000);
@@ -80,7 +80,7 @@ public class Teleop extends OpMode {
             LineraMecanizmeteleop.toparm2.setPosition(.05);//moves to hang position
             LineraMecanizmeteleop.bottomarm2.setPosition(.4);
             LineraMecanizmeteleop.bottomarm1.setPosition(.4);
-            LineraMecanizmeteleop.bottomrotator.setPosition(1);
+            LineraMecanizmeteleop.bottomrotator.setPosition(.95);
         }
 
         if(gamepad2.right_bumper){
