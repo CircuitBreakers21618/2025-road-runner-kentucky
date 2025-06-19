@@ -62,11 +62,11 @@ public class Teleop extends OpMode {
         if (gamepad2.x) {//fast transition
             LineraMecanizmeteleop.topclaw.setPosition(0.6);//open top claw
             LineraMecanizmeteleop.toparm2.setPosition(.97);//move to transfer position
-            LineraMecanizmeteleop.toparm1.setPosition(.03);//move to transfer position
+            LineraMecanizmeteleop.toparm1.setPosition(.06);//move to transfer position
             sleep(550);
             LineraMecanizmeteleop.bottomarm1.setPosition(0.2);
             LineraMecanizmeteleop.bottomarm2.setPosition(.8);
-            LineraMecanizmeteleop.bottomrotator.setPosition(.95);
+            LineraMecanizmeteleop.bottomrotator.setPosition(.9);
             LineraMecanizmeteleop.bottomclaw.setPosition(.3);
 
             sleep(1000);
@@ -80,7 +80,7 @@ public class Teleop extends OpMode {
             LineraMecanizmeteleop.toparm2.setPosition(.05);//moves to hang position
             LineraMecanizmeteleop.bottomarm2.setPosition(.4);
             LineraMecanizmeteleop.bottomarm1.setPosition(.4);
-            LineraMecanizmeteleop.bottomrotator.setPosition(.95);
+            LineraMecanizmeteleop.bottomrotator.setPosition(.9);
         }
 
         if(gamepad2.right_bumper){
