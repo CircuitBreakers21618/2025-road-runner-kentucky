@@ -117,10 +117,10 @@ public class Teleop extends OpMode {
                 //wrist adjust
 
                 //wrist adjust
-                arm1TargetPosition = 0.45;
+                arm1TargetPosition = 0.4;
                 LineraMecanizmeteleop.bottomarm2.setPosition(arm1TargetPosition);
 
-                arm2TargetPosition = 0.35;
+                arm2TargetPosition = 0.4;
                 LineraMecanizmeteleop.bottomarm1.setPosition(arm2TargetPosition);
 
                 arm1CurrentPosition = arm1TargetPosition;
