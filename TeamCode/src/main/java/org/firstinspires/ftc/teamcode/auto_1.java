@@ -29,7 +29,7 @@ public class auto_1 extends LinearOpMode {
         Actions.runBlocking(
                 drive.actionBuilder(beginPose)
                         .afterTime(.1,LineraMecanizmeteleop.hang_specimen())
-                        .lineToX(-50)
+                        .lineToX(-32)
                         .waitSeconds(2)
                         .setReversed(true)
                         .splineToLinearHeading(
