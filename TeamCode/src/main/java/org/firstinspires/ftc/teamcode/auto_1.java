@@ -28,8 +28,8 @@ public class auto_1 extends LinearOpMode {
         if (isStopRequested()) return;
         Actions.runBlocking(
                 drive.actionBuilder(beginPose)
-                        .afterTime(.1,LineraMecanizmeteleop.hang_specimen())
-                        .waitSeconds(1)
+                        .afterTime(.5,LineraMecanizmeteleop.hang_specimen())
+                        .waitSeconds(.75)
                         .lineToX(-38)
                         .waitSeconds(2)
                         .setReversed(true)
