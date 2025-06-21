@@ -87,6 +87,10 @@ public class Teleop extends OpMode {
             LineraMecanizmeteleop.bottomrotator.setPosition(.5);
         }
 
+
+        if(gamepad2.dpad_left){
+            LineraMecanizmeteleop.bottomrotator.setPosition(1);
+        }
         if (gamepad2.y) {
             LineraMecanizmeteleop.topclaw.setPosition(0.6);
         }
