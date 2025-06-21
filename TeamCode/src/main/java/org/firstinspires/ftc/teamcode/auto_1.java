@@ -26,7 +26,7 @@ public class auto_1 extends LinearOpMode {
         sleep(500);
         LineraMecanizmeteleop.toparm1.setPosition(0.7);//moves to hang position
         LineraMecanizmeteleop.toparm2.setPosition(0.06);
-        driveato.moveforward(1, 1000);
+        driveato.moveforward(-1, 1000);
         driveato.stopmotor();
         LineraMecanizmeteleop.rightliner.setPower(-.5);
         LineraMecanizmeteleop.leftliner.setPower(.5);
@@ -34,15 +34,15 @@ public class auto_1 extends LinearOpMode {
         LineraMecanizmeteleop.rightliner.setPower(0);
         LineraMecanizmeteleop.leftliner.setPower(0);
         LineraMecanizmeteleop.topclaw.setPosition(0.6);
-        driveato.moveforward(-1, 500);
+        driveato.moveforward(1, 500);
         driveato.stopmotor();
         driveato.RightTurn(.5, 750);
         driveato.stopmotor();
-        driveato.moveforward(1, 750);
+        driveato.moveforward(-1, 750);
         driveato.stopmotor();
         driveato.LeftTurn(.5, 750);
         driveato.stopmotor();
-        driveato.moveforward(-1, 500);
+        driveato.moveforward(1, 500);
 
     }
 
