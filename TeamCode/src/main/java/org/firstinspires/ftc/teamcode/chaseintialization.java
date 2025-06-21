@@ -22,10 +22,10 @@ public class chaseintialization {
 
 
     public void RightTurn(double power, long time) throws InterruptedException {
-        leftBack.setPower(power);
+        leftBack.setPower(-power);
         rightBack.setPower(-power);
         leftFront.setPower(power);
-        rightFront.setPower(power);
+        rightFront.setPower(-power);
         //how long it waits
         sleep(time);
 
