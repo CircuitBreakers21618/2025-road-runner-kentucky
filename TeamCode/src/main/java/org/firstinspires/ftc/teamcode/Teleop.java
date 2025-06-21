@@ -51,9 +51,9 @@ public class Teleop extends OpMode {
         driveteleop.leftBack.setPower(gamepad1.right_stick_y + -gamepad1.left_stick_x * 1.1 + gamepad1.right_stick_x);
         driveteleop.rightFront.setPower(-gamepad1.right_stick_y + gamepad1.left_stick_x * 1.1 + gamepad1.right_stick_x);
         driveteleop.rightBack.setPower(-gamepad1.right_stick_y + -gamepad1.left_stick_x * 1.1 + -gamepad1.right_stick_x);
-        LineraMecanizmeteleop.leftliner.setPower(-gamepad2.right_stick_y);
-        LineraMecanizmeteleop.rightliner.setPower(gamepad2.right_stick_y);
-        LineraMecanizmeteleop.forwardliner.setPower(gamepad2.left_stick_y);
+        LineraMecanizmeteleop.leftliner.setPower(-gamepad2.left_stick_y);
+        LineraMecanizmeteleop.rightliner.setPower(gamepad2.left_stick_y);
+        LineraMecanizmeteleop.forwardliner.setPower(gamepad2.right_stick_y);
 
         previousGamepad2.copy(currentGamepad2);
         currentGamepad2.copy(gamepad2);
@@ -62,10 +62,10 @@ public class Teleop extends OpMode {
         if (gamepad2.x) {//fast transition
             LineraMecanizmeteleop.topclaw.setPosition(0.6);//open top claw
             LineraMecanizmeteleop.toparm2.setPosition(.9);//move to transfer position
-            LineraMecanizmeteleop.toparm1.setPosition(.02);//move to transfer position
+            LineraMecanizmeteleop.toparm1.setPosition(.035);//move to transfer position
             sleep(550);
-            LineraMecanizmeteleop.bottomarm1.setPosition(0.2);
-            LineraMecanizmeteleop.bottomarm2.setPosition(.8);
+            LineraMecanizmeteleop.bottomarm1.setPosition(0.22);
+            LineraMecanizmeteleop.bottomarm2.setPosition(.78);
             LineraMecanizmeteleop.bottomrotator.setPosition(1);
             LineraMecanizmeteleop.bottomclaw.setPosition(.3);
 
