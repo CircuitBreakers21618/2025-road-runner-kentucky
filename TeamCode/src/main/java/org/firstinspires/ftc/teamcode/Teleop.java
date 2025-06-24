@@ -71,7 +71,7 @@ public class Teleop extends OpMode {
 
             sleep(1000);
 
-            LineraMecanizmeteleop.topclaw.setPosition(0.14);//closes claw
+            LineraMecanizmeteleop.topclaw.setPosition(0.1);//closes claw
             sleep(400);
             LineraMecanizmeteleop.bottomclaw.setPosition(.8);
 
