@@ -27,7 +27,7 @@ public class auto_1 extends LinearOpMode {
         LineraMecanizmeteleop.toparm1.setPosition(0.55);//moves to hang position
         LineraMecanizmeteleop.toparm2.setPosition(0.08);
         sleep(750);
-        driveato.moveforward(-.5, 1300);
+        driveato.moveforward(-.5, 1000);
         driveato.stopmotor();
         LineraMecanizmeteleop.rightliner.setPower(-.3);
         LineraMecanizmeteleop.leftliner.setPower(.3);

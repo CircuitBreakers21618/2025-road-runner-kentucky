@@ -50,7 +50,7 @@ public class Teleop extends OpMode {
         driveteleop.leftFront.setPower(-gamepad1.right_stick_y + -gamepad1.left_stick_x * 1.1 + -gamepad1.right_stick_x);
         driveteleop.leftBack.setPower(gamepad1.right_stick_y + -gamepad1.left_stick_x * 1.1 + gamepad1.right_stick_x);
         driveteleop.rightFront.setPower(-gamepad1.right_stick_y + gamepad1.left_stick_x * 1.1 + gamepad1.right_stick_x);
-        driveteleop.rightBack.setPower(-gamepad1.right_stick_y + -gamepad1.left_stick_x * 1.1 + -gamepad1.right_stick_x);
+        driveteleop.rightBack.setPower(-gamepad1.right_stick_y + gamepad1.left_stick_x * 1.1 + gamepad1.right_stick_x);
         LineraMecanizmeteleop.leftliner.setPower(-gamepad2.left_stick_y);
         LineraMecanizmeteleop.rightliner.setPower(gamepad2.left_stick_y);
         LineraMecanizmeteleop.forwardliner.setPower(gamepad2.right_stick_y);
@@ -76,7 +76,7 @@ public class Teleop extends OpMode {
             LineraMecanizmeteleop.bottomclaw.setPosition(.8);
 
             sleep(200);
-            LineraMecanizmeteleop.toparm1.setPosition(0.8);//moves to hang position
+            LineraMecanizmeteleop.toparm1.setPosition(0.7);//moves to hang position
             LineraMecanizmeteleop.toparm2.setPosition(.06);//moves to hang position
             LineraMecanizmeteleop.bottomarm2.setPosition(.4);
             LineraMecanizmeteleop.bottomarm1.setPosition(.4);
